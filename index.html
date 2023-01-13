@@ -5,28 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Dice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form action=""></form>
+    <!-- Header -->
     <header>
-        <h1>Indovina i numeri</h1>
+        <h1><i class="fa-solid fa-brain"></i> Simon Dice</h1>
     </header>
 
+    <!-- Main -->
     <main>
-        <h2></h2>
-        <span id="timer-text">Attendi 30 secondi</span>
-        <h3></h3>
+        <div class="cont-main">
+            <h2></h2>
 
-        <section class="num-user-pc">
-            <div id="num-user"></div>
-            <div class="num-pc"></div>
-        </section>
+            <span id="timer-text"></span>
 
-        <div class="inp-but">
-            <input type="text" id="input-num">
-            <button id="button-num">Send</button>
+            <h3></h3>
+
+            <section class="num-user-pc">
+                <div id="num-user"></div>
+                <div class="num-pc"></div>
+            </section>
+
+            <section class="inp-but">
+                <input type="text" id="input-num">
+                <button id="button-num">Send</button>
+            </section>
         </div>
     </main>
     

@@ -14,12 +14,26 @@ header {
     padding: 23px;
 }
 
-main {
-    padding: 50px;
-    text-align: center;
+.fa-brain {
+    color: red;
 }
 
-#timer-text {
+main {
+    padding: 60px 0;
+    width: 40%;
+    margin: auto;
+}
+
+.cont-main {
+    text-align: center;
+    border: 3px red;
+    border-style:dashed;
+    border-radius: 10px;
+    padding: 80px 30px;
+}
+
+span#timer-text {
+    margin-top: 7px;
     color: gray;
 }
 
@@ -29,10 +43,11 @@ h3 {
 
 section.num-user-pc {
     font-size: 16px;
+    font-style: italic;
     color: gray;
 }
 
-div.inp-but{
+section.inp-but{
     margin-top: 22px;
 }
 

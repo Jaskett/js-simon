@@ -14,7 +14,7 @@ const arrRandNum = [];
 
 for(let i = 1; i <= 5; i++) {
     let randomNumber = randomNumFunction(1, 1000);
-    arrRandNum.push(randomNumber);
+    arrRandNum.push(" " + randomNumber);
 }
 
 console.log(arrRandNum);
@@ -39,12 +39,12 @@ const arrNumUser = [];
 buttonNum.addEventListener('click',
     function() {
         if(arrNumUser.length < 4) {
-            arrNumUser.push(inputNum.value);
+            arrNumUser.push(" " + inputNum.value);
             console.log(arrNumUser);
             inputNum.value = "";
         }
         else if(arrNumUser.length < 5) {
-            arrNumUser.push(inputNum.value);
+            arrNumUser.push(" " + inputNum.value);
 
             document.getElementById('num-user').innerHTML = `Numeri inseriti: ${arrNumUser}`;
             console.log("Numeri inseriti: ", arrNumUser);
@@ -55,7 +55,7 @@ buttonNum.addEventListener('click',
             const textResult = document.querySelector('h3');
             let arrayEqual = arrayEqualFunction(arrRandNum, arrNumUser);
 
-            if(arrayEqual === true) {
+            if(arrayEqual == true) {
                 textResult.innerHTML = "Hai indovinato tutti i numeri, hai vinto!";
                 textResult.style.color = "green";
                 console.log("Hai indovinato tutti i numeri, hai vinto!");
